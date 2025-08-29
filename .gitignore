@@ -4,3 +4,5 @@ __pycache__/
 create_table.py
 script_delete.py
 echo "venv/" >> .gitignore
+echo "venv/" >> .gitignore
+echo "logs/" >> .gitignore
