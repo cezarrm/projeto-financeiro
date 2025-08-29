@@ -71,5 +71,5 @@ t3 = PythonOperator(
     dag=dag
 )
 
-# Ordem das tarefas: extrair → normalizar → atualizar Glue
+
 t1 >> t2 >> t3
