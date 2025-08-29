@@ -2,7 +2,6 @@
 
 Projeto de ETL financeiro que extrai cotações de moedas, normaliza os dados, atualiza partições no AWS Glue e disponibiliza informações para análises em camadas **bronze**, **silver** e **gold**.
 
----
 
 ## Descrição
 Este projeto realiza um pipeline completo de dados financeiros:
@@ -12,7 +11,20 @@ Este projeto realiza um pipeline completo de dados financeiros:
 3. **Carga:** Atualiza partições no AWS Glue e salva em S3.
 4. **Consumo:** Dados disponíveis para análises no Athena ou outras ferramentas.
 
----
+
+## Tecnologias Usadas
+
+Este projeto utiliza as seguintes tecnologias:
+
+- **Python 3.x** – Linguagem principal para scripts de ETL e automação.
+- **Pandas** – Manipulação e transformação de dados.
+- **PostgreSQL** – Banco de dados relacional para armazenar dados processados.
+- **AWS S3** – Armazenamento dos dados em camadas (bronze, silver, gold).
+- **AWS Glue** – Catálogo de dados e atualização de partições.
+- **AWS Athena** – Consulta e análise dos dados armazenados no S3.
+- **Apache Airflow** – Orquestração do pipeline ETL.
+- **Git / GitHub** – Controle de versão e colaboração.
+- 
 
 ## Instalação
 Passos para rodar localmente:
