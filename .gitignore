@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+create_table.py
+script_delete.py
+echo "venv/" >> .gitignore
