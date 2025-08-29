@@ -16,15 +16,19 @@ Este projeto realiza um pipeline completo de dados financeiros:
 
 Este projeto utiliza as seguintes tecnologias:
 
-- **Python 3.x** – Linguagem principal para scripts de ETL e automação.
-- **Pandas** – Manipulação e transformação de dados.
-- **PostgreSQL** – Banco de dados relacional para armazenar dados processados.
-- **AWS S3** – Armazenamento dos dados em camadas (bronze, silver, gold).
-- **AWS Glue** – Catálogo de dados e atualização de partições.
-- **AWS Athena** – Consulta e análise dos dados armazenados no S3.
-- **Apache Airflow** – Orquestração do pipeline ETL.
+- **Python 3.x** – Linguagem principal para todo o pipeline ETL.
+- **Pandas** – Para manipulação, normalização e transformação de dados.
+- **AWS S3** – Armazenamento das camadas de dados (bronze, silver, gold).
+- **AWS Glue** – Atualização de partições e catálogo de dados.
+- **AWS Athena** – Consulta das tabelas em S3.
+- **Apache Airflow** – Orquestração do pipeline e execução das DAGs.
+- **Requests** – Para fazer chamadas à API de cotações.
 - **Git / GitHub** – Controle de versão e colaboração.
-- 
+  
+## Tecnologias Usadas
+
+O projeto utiliza as seguintes ferramentas e bibliotecas:
+
 
 ## Instalação
 Passos para rodar localmente:
