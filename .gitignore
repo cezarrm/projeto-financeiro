@@ -1,8 +1,25 @@
+# Ambientes virtuais
+venv/
 .env
+
+# Logs do Airflow
+logs/
+airflow/logs/
+
+# Cache do Python
 __pycache__/
 *.pyc
-create_table.py
-script_delete.py
-echo "venv/" >> .gitignore
-echo "venv/" >> .gitignore
-echo "logs/" >> .gitignore
+*.pyo
+
+# Arquivos temporários
+*.log
+*.tmpgit rm -r --cached venv logs __pycache__
+git add .gitignore
+git commit -m "Ignorar venv, logs e cache do Python"
+git push
+
+# Docker
+*.pid
+
+# Outros
+*.DS_Store
