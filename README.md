@@ -30,11 +30,6 @@ O projeto utiliza as seguintes ferramentas e bibliotecas:
 - **Docker** – Containerização da aplicação.
 - **Docker Compose** – Orquestração de contêineres para rodar Airflow e scripts juntos.
 
-  
-## Tecnologias Usadas
-
-O projeto utiliza as seguintes ferramentas e bibliotecas:
-
 
 ## Instalação
 Passos para rodar localmente:
@@ -59,18 +54,29 @@ Obs: Configure suas credenciais AWS antes de rodar o pipeline:
 ```
 aws configure
 ```
+Ou via .env usando AWS_ACCESS_KEY_ID e AWS_SECRET_ACCESS_KEY.
+
 ## Estrutura do Projeto
 ```text
 projeto-financeiro/
+projeto-financeiro/
 │
-├─ scripts/                  # Scripts de ETL
-│   ├─ extract_currency.py    # Extrai dados da API
-│   ├─ normalize_currency.py  # Normaliza e trata os dados
-│   └─ update_glue_partitions.py  # Atualiza partições no Glue
+├─ airflow/
+│  └─ dags/
+│     └─ currency_pipeline.py       # DAG principal do Airflow
 │
-├─ dags/                     # DAGs do Airflow
-│   └─ currency_pipeline.py
+├─ scripts/
+│  ├─ create_table.py               # Criação de tabelas no Glue (se necessário)
+│  ├─ extract_currency.py           # Extração de dados da API
+│  ├─ normalize_currency.py         # Limpeza e normalização dos dados
+│  ├─ update_glue_partitions.py     # Atualização de partições no Glue
+│  └─ script_delete.py              # Script auxiliar para exclusão de arquivos ou partições
 │
-├─ requirements.txt          # Dependências do Python
-└─ README.md                 # Documentação do projeto
+├─ venv/                            # Ambiente virtual Python
+├─ .env                             # Variáveis de ambiente (AWS, API)
+├─ requirements.txt                 # Dependências Python
+├─ Dockerfile                       # Containerização
+├─ docker-compose.yaml              # Orquestração Docker
+└─ .gitignore
+
 ```
