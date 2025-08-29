@@ -16,14 +16,20 @@ Este projeto realiza um pipeline completo de dados financeiros:
 
 Este projeto utiliza as seguintes tecnologias:
 
-- **Python 3.x** – Linguagem principal para todo o pipeline ETL.
+## Tecnologias Usadas
+
+O projeto utiliza as seguintes ferramentas e bibliotecas:
+
+- **Python 3.x** – Linguagem principal para scripts de ETL.
 - **Pandas** – Para manipulação, normalização e transformação de dados.
 - **AWS S3** – Armazenamento das camadas de dados (bronze, silver, gold).
 - **AWS Glue** – Atualização de partições e catálogo de dados.
 - **AWS Athena** – Consulta das tabelas em S3.
 - **Apache Airflow** – Orquestração do pipeline e execução das DAGs.
-- **Requests** – Para fazer chamadas à API de cotações.
-- **Git / GitHub** – Controle de versão e colaboração.
+- **Requests / JSON** – Para extrair dados da API de cotações.
+- **Docker** – Containerização da aplicação.
+- **Docker Compose** – Orquestração de contêineres para rodar Airflow e scripts juntos.
+
   
 ## Tecnologias Usadas
 
