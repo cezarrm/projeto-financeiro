@@ -13,13 +13,13 @@ __pycache__/
 
 # Arquivos temporários
 *.log
-*.tmpgit rm -r --cached venv logs __pycache__
-git add .gitignore
-git commit -m "Ignorar venv, logs e cache do Python"
-git push
+*.tmp
 
 # Docker
 *.pid
 
 # Outros
 *.DS_Store
+
+script_delete.py
+create_table.py

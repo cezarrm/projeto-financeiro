@@ -1,0 +1,6 @@
+boto3
+pandas
+requests
+s3fs
+apache-airflow-providers-amazon
+apache-airflow-providers-amazon>=3.1.0
