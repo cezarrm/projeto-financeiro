@@ -14,10 +14,6 @@ Este projeto realiza um pipeline completo de dados financeiros:
 
 ## Tecnologias Usadas
 
-Este projeto utiliza as seguintes tecnologias:
-
-## Tecnologias Usadas
-
 O projeto utiliza as seguintes ferramentas e bibliotecas:
 
 - **Python 3.x** – Linguagem principal para scripts de ETL.
